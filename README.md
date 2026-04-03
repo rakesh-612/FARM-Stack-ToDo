@@ -15,6 +15,7 @@ npm create vite@latest
 Choose:
 ✔ React
 ✔ JavaScript (or TypeScript)
+
 npm install
 
 # Install dependencies
