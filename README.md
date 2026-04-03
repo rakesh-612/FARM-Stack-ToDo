@@ -10,7 +10,11 @@ Frontend Setup
 cd frontend
 
 # Install React app
-npx create-react-app .
+npm create vite@latest
+Choose:
+✔ React
+✔ JavaScript (or TypeScript)
+npm install
 
 # Install dependencies
 npm install axios react-icons
