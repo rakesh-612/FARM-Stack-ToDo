@@ -32,13 +32,13 @@ python -m venv post-env
 cd backend
 
 # Install dependencies
-pip install "fastapi[all]" "motor[srv]" beanie aiostream
+pip install "fastapi[all]" "motor[srv]" beanie aiostream python-dotenv
 
 # Check installed packages
 pip list
 
 # Run server
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn src.server:app --host 0.0.0.0 --port 8000 --reload
 
 # Create requirements file
 pip freeze > requirements.txt
