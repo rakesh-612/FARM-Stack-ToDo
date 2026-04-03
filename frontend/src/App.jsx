@@ -6,7 +6,7 @@ import ToDoList from "./components/ToDoList/ToDoList";
 
 function App() {
 
-  const [listSummaries, setListSummaries] = useState(null);
+  const [listSummaries, setListSummaries] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function App() {
   async function reloadData() {
     const response = await axios.get("/api/lists");
     const data = await response.data;
-    setListSummaries(data);
+    setListSummaries(data || []);
   }
 
   function handleNewToDoList(newName) {

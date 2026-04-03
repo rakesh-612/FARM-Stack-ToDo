@@ -79,7 +79,7 @@ function ToDoList({ listId, handleBackButton }) {
                 </button>
             </div>
             {listData.items.length > 0 ? (
-                listData.items.map((item) => {
+                (listData?.items || [])?.map((item) => {
                     return (
                         <div
                             key={item?.id}
