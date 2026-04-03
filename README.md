@@ -11,6 +11,7 @@ cd frontend
 
 # Install React app
 npm create vite@latest
+
 Choose:
 ✔ React
 ✔ JavaScript (or TypeScript)
